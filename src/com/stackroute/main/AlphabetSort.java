@@ -4,8 +4,10 @@ import java.util.Arrays;
 
 public class AlphabetSort {
     public void AlphabetWordSort(){
-        String paragraph="a quick brown fox jumps over the lazy dog on first day";
+        String paragraph="a quick brown fox jumps over the lazy dog on first day. HalleLuya, may be or not";
         System.out.println("Input paragraph :\n"+paragraph);
+
+        paragraph=paragraph.toLowerCase().replaceAll("[.,]"," ");
         String[] words=paragraph.split("\\s+");
 
         for(int i = 0; i<words.length; i++) {

@@ -11,7 +11,7 @@ public class CountChar {
         String target=input.nextLine();
         int totalLengthWithTargetChar,totalLengthWithoutTargetChar;
         totalLengthWithTargetChar=searchString.length();
-        totalLengthWithoutTargetChar=searchString.toLowerCase().replaceAll(target,"").length();
+        totalLengthWithoutTargetChar=searchString.toLowerCase().replaceAll(target.toLowerCase(),"").length();
         int resultFrequency=totalLengthWithTargetChar-totalLengthWithoutTargetChar;
         System.out.println("Frequency of "+target +" in "+searchString+" is : "+resultFrequency);
     }
